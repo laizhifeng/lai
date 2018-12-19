@@ -1,0 +1,259 @@
+@CHARSET "UTF-8";
+body{
+        overflow-x: hidden;
+        margin:0 auto;
+        background-color: rgba(241, 236, 236, 0.287);   
+    }
+    /* 空白行 */
+    .infoDiv{
+        width: 100%;
+        height: 60px;
+        background-color: white;       
+    }
+    /* 退出 */
+    	.infoDiv a{
+        	position: relative;
+        	left:1500px;
+        	top: -30px;
+    	}
+    /* 用户名 */
+    .ShowUserName{
+    	position: absolute;
+    	text-align: right;
+    	top: 30px;
+    	right:170px;
+    	
+    }
+    /* 个人头像 */
+    .personalDiv{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%; 
+        position: relative;
+        left: 1440px;
+    }
+    	.personalDiv img{
+    	height: 60px;
+        width: 60px;
+    	}
+    	
+    /* 标题 */
+    .titleDiv{
+       width: 100%;
+       height: 180px; 
+       background-size: cover ;
+       background-repeat: no-repeat ;
+    }
+    /* 标题 */
+    	.titleDiv h1{     
+       	 	margin: auto;
+        	text-align: center;
+        	line-height: 180px;
+        	font-size: 70px;
+       	 	font-family: 宋体;
+        	font-style:italic;
+        	color: rgb(19, 83, 126);
+    	}
+    
+    /* 主体 */
+    .holisticDiv{
+        width: 1300px;
+        height: 1200px;
+        background-color: white; 
+        border: 0.5px solid rgba(250, 250, 250, 0.74);
+        margin: 10px auto;
+        border-radius:8px;
+    }
+    /* 左侧栏 */
+    .moduleDiv{
+        height: 100%;
+        width: 250px;
+        background-color: rgba(1, 3, 7, 0.356);
+        border-radius:8px;
+        cursor:pointer;
+    }
+    /* 菜单栏 */
+    .menuDiv{
+        
+        width: 100%;
+        height: 60px;
+        background-color: rgba(1, 3, 7, 0.644);
+        color: white;
+        font-family: 宋体;
+        font-size: 30px;
+        text-align: center;
+        line-height: 60px;
+        border-bottom:0.5px solid rgb(202, 200, 200);
+        
+    }
+    
+    /* 子菜单栏  */
+    .submenuDiv{
+        width: 100%;
+        background-color: rgba(1, 3, 7, 0.363);
+        display: none;
+        border-bottom:0.5px solid rgb(202, 200, 200);
+        cursor:pointer;
+    }
+    /* 子菜单栏明细 */
+    .submenu{
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+        font-family: 宋体;
+        border-bottom:0.5px solid rgb(202, 200, 200);
+        cursor:pointer;
+    }
+    	.menuDiv:hover{
+        background-color: rgb(160, 157, 160);
+    	}
+    	.submenu:hover{
+        background-color: rgb(160, 157, 160);
+    	}
+    /* 信息模块 */
+    .Info{
+        height: 100%;
+        width: 1000px;
+        position: relative;
+        top: -1200px;
+        left: 270px;
+    }
+    
+    /* 信息查询模块 */
+    .search{
+        position: relative;
+        height: 100%;
+        width: 100%;        
+    }
+    /* 搜索框 */
+    .search_box{
+        position: relative;
+        top: 20px;
+        left: 50px;
+        width: 250px;
+        height: 30px;
+    }
+     /* 搜索按钮 */
+    .search_button{
+        position: relative;
+        top: 20px;
+        left: 50px;
+        width: 50px; 
+        height: 30px;       
+    }
+    /* 批量删除按钮 */
+    .del_batch_button{
+        position: relative;
+        top: 20px;
+        left: 50px;
+        width: 80px; 
+        height: 30px;
+        display: none       
+    }
+     /* 批量删除部分按钮 */
+    .del_div{
+    	position: absolute; 
+        top: -40px;
+        left: 40px;
+       display: none;
+    }
+ 
+    /* 信息显示集合 */
+    .show_list{
+        position: relative;
+        height: 100%;
+        width: 100%; 
+        top: -1100px;
+        left: 70px;
+        display: none;
+    }
+    
+    	.show_list input[type=checkbox]{
+    		width: 20px;
+    	}
+    	
+    	.show_list ul li{
+    		list-style:none;
+    	}
+    	
+    		.show_list ul li button{
+    		cursor:pointer;
+    		border:none;
+    		background-color:transparent;
+    		font-size:20px;
+    		style="vertical-align:middle;
+    		}
+    /* 信息详细显示 */
+    .show_info{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 80px;
+        left: 70px;
+        display: none;
+    }
+    	.show_info input{
+       
+        width: 150px;
+        height: 25px;
+    	}
+    
+    
+   	/* 信息添加 */
+    .add_info{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        left:50px;
+        top: 10px;
+        
+    }
+
+    	/* 信息添加输入框 */
+    	.add_info input{
+      	 	width: 150px;
+       	 	height: 25px;
+    	}
+   
+    
+    .houseImg{
+        width: 300px;
+        height:150px;
+        border:1px solid #eee;
+    }
+    	.houseImg img{
+            width: 300px;
+            height: 100%;
+    	}
+    
+    input[type="checkbox"]{
+    	zoom:180%;
+    	vertical-align:middle;  
+    }
+    
+    
+    .ErrorInfo{
+        position: relative;
+        top: -24px;
+        left: 300px;
+        color: red;
+    }
+    /* 分页 */
+	.pagediv{
+		position: absolute;
+		top:600px;
+		left: 50px;
+		display: none;
+	}
+	
+	.notfound{
+		color: red; 
+		position: absolute; 
+		top: 100px; 
+		left: 50px; 
+		display: none;"
+	}
+    

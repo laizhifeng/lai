@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean name="userDao" class="com.zy.DaoImpl.UserDaoImpl"></bean>	
+	<bean name="houseDao" class="com.zy.DaoImpl.HouseDaoImpl"></bean>
+	<bean name="tenantDao" class="com.zy.DaoImpl.TenantDaoImpl"></bean>		
+	
+	<bean name="userService" class="com.zy.ServiceImpl.UserServiceImpl">
+		<property name="userDao" ref="userDao"></property>
+	</bean>
+	<bean name="houseService" class="com.zy.ServiceImpl.HouseServiceImpl">
+		<property name="houseDao" ref="houseDao"></property>
+	</bean>	
+	<bean name="tenantService" class="com.zy.ServiceImpl.TenantServiceImpl">
+		<property name="tenantDao" ref="tenantDao"></property>
+	</bean>	
+
+</beans>

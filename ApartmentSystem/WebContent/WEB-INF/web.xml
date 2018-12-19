@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ApartmentSystem</display-name>
+  <welcome-file-list>
+ 
+   <welcome-file>login.jsp</welcome-file>
+   <welcome-file>show_house.jsp</welcome-file>   
+   <welcome-file>add_house.jsp</welcome-file>
+
+   <welcome-file>show_tenant.jsp</welcome-file>   
+   <welcome-file>add_tenant.jsp</welcome-file>
+
+  </welcome-file-list>
+  
+  <!-- <servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.zy.Servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SignInServlet</servlet-name>
+		<servlet-class>com.zy.Servlet.SignInServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>HouseAddServlet</servlet-name>
+		<servlet-class>com.zy.Servlet.HouseInsertServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>HouseSelectServlet</servlet-name>
+		<servlet-class>com.zy.Servlet.HouseSelectServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ShowHouseServlet</servlet-name>
+		<servlet-class>com.zy.Servlet.ShowHouseServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>HouseUpdateServlet</servlet-name>
+		<servlet-class>com.zy.Servlet.HouseUpdateServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>HouseDeleteServlet</servlet-name>
+		<servlet-class>com.zy.Servlet.HouseDeleteServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>HouseDeleteBatchServlet</servlet-name>
+		<servlet-class>com.zy.Servlet.H_DeleteBatchServlet</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>SignInServlet</servlet-name>
+		<url-pattern>/signIn</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HouseAddServlet</servlet-name>
+		<url-pattern>/HouseAdd</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HouseSelectServlet</servlet-name>
+		<url-pattern>/HouseSelect</url-pattern>
+	</servlet-mapping>	
+	<servlet-mapping>
+		<servlet-name>ShowHouseServlet</servlet-name>
+		<url-pattern>/ShowHouse</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HouseUpdateServlet</servlet-name>
+		<url-pattern>/HouseUpdate</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HouseDeleteServlet</servlet-name>
+		<url-pattern>/HouseDelete</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HouseDeleteBatchServlet</servlet-name>
+		<url-pattern>/HouseDeleteBatch</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+  	<servlet-name>addTenant</servlet-name>
+  	<servlet-class>com.zy.Servlet.AddTenantServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>selectTenant</servlet-name>
+  	<servlet-class>com.zy.Servlet.SelectTenantServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>showTenant</servlet-name>
+  	<servlet-class>com.zy.Servlet.ShowTenantServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>updateTenant</servlet-name>
+  	<servlet-class>com.zy.Servlet.UpdateTenantServlet</servlet-class>
+  </servlet>
+    <servlet>
+  	<servlet-name>deleteTenant</servlet-name>
+  	<servlet-class>com.zy.Servlet.DeleteTenantServlet</servlet-class>
+  </servlet>
+   <servlet>
+  	<servlet-name>TenantDeleteBatchServlet</servlet-name>
+  	<servlet-class>com.zy.Servlet.T_DeleteBatchServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>addTenant</servlet-name>
+  	<url-pattern>/AddTenant</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>selectTenant</servlet-name>
+  	<url-pattern>/SelectTenant</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+  	<servlet-name>showTenant</servlet-name>
+  	<url-pattern>/ShowTenant</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+  	<servlet-name>updateTenant</servlet-name>
+  	<url-pattern>/UpdateTenant</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>deleteTenant</servlet-name>
+  	<url-pattern>/DeleteTenant</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TenantDeleteBatchServlet</servlet-name>
+  	<url-pattern>/TenantDeleteBatch</url-pattern>
+  </servlet-mapping> -->
+  <filter>
+  	<filter-name>setCharacterEncodingFilter</filter-name>
+  	<filter-class>com.zy.Filter.setCharacterEncodingFilter</filter-class>
+  	<!-- 设置客户端请求编码 -->
+  	<init-param>
+  		<param-name>encode</param-name>
+  		<param-value>UTF-8</param-value>
+  	</init-param>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>setCharacterEncodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  
+    <filter>
+  	<filter-name>ReourceFilter</filter-name>
+  	<filter-class>com.zy.Filter.ReourceFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>ReourceFilter</filter-name>
+  	<url-pattern>/House/*</url-pattern>
+  </filter-mapping> 
+   
+   <filter-mapping>
+  	<filter-name>ReourceFilter</filter-name>
+  	<url-pattern>/Tenant/*</url-pattern>
+  </filter-mapping>
+</web-app>
